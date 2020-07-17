@@ -1,3 +1,8 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
 header,
 main,
 footer {
@@ -12,22 +17,27 @@ header {
 	align-items: center;
 }
 
+ul {
+	list-style-type: none;
+}
+
+/* Home */
+
 .heading {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	flex-flow: column;
 	margin: 0;
 	margin-top: 5rem;
 	padding: 2rem;
-	padding-left: calc(100vw - 90%);
-	padding-right: calc(100vw - 90%);
 
 	border: 0.2rem solid;
 	justify-content: center;
 	align-items: center;
 }
 
-.heading h2 {
+.heading h1 {
 	font-size: 64px;
 	text-align: center;
 }
@@ -77,4 +87,32 @@ header {
 .heading .button:hover span:after {
 	opacity: 1;
 	right: 0;
+}
+
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 0.2rem solid;
+	width: auto;
+}
+
+.about .about_heading {
+	text-align: left;
+	padding: 1rem;
+}
+
+.about .about_heading > h2 {
+	text-align: center;
+	padding: 1rem;
+}
+
+.about .about_heading > p {
+	text-align: center;
+	padding: 1rem;
+}
+
+.about .about_heading > ul > li {
+	margin: 1rem;
 }
