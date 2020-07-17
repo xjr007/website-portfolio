@@ -12,6 +12,26 @@ header {
 	align-items: center;
 }
 
+a {
+	text-decoration: none;
+	background-color: orange;
+	color: black;
+	padding: 0.7rem;
+	margin: 0.7rem;
+	transition: all 0.7s;
+}
+
+a:hover {
+	background-color: burlywood;
+	cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* Home */
+
 .heading {
 	display: flex;
 	flex-direction: column;
@@ -27,7 +47,7 @@ header {
 	align-items: center;
 }
 
-.heading h2 {
+.heading h1 {
 	font-size: 64px;
 	text-align: center;
 }
@@ -77,4 +97,36 @@ header {
 .heading .button:hover span:after {
 	opacity: 1;
 	right: 0;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 1rem;
+	margin-top: 5rem;
+	padding: 2rem;
+	padding-left: calc(100vw - 90%);
+	padding-right: calc(100vw - 90%);
+
+	border: 0.2rem solid;
+	justify-content: center;
+	align-items: center;
+}
+
+.about .navigation ul.cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex-flow: column;
+	width: calc(50vw - 25%);
+	padding: 1rem;
+	margin: 0rem;
+}
+
+.about .navigation ul.cards li div.card {
+	margin: 2rem;
+	padding: 0;
 }
