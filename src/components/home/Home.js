@@ -15,44 +15,42 @@ const Home = props => {
 			</header>
 			<main>
 				<div className='about'>
-					<h2>About</h2>{' '}
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi libero ab, commodi veritatis
-						perferendis excepturi eius temporibus voluptatum. Iusto, quaerat?
-					</p>
-					<div className='navigation'>
-						<ul className='cards'>
-							<li>
-								<div className='card'>
-									<a href='/' type='button' className='button'>
-										Resume
-									</a>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos ducimus, facilis alias
-										quisquam voluptatibus?
-									</p>
-								</div>
-								<div className='card'>
-									<a href='/' type='button' className='button'>
-										Testimonials
-									</a>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos ducimus, facilis alias
-										quisquam voluptatibus?
-									</p>
-								</div>
-								<div className='card'>
-									<a href='/' type='button' className='button'>
-										Projects
-									</a>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos ducimus, facilis alias
-										quisquam voluptatibus?
-									</p>
-								</div>
-							</li>
-						</ul>
+					<div className='about_heading'>
+						<h2>About</h2>{' '}
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi libero ab, commodi veritatis
+							perferendis excepturi eius temporibus voluptatum. Iusto, quaerat?
+						</p>
 					</div>
+					<ul className='cards'>
+						<li className='card'>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos ducimus, facilis alias
+								quisquam voluptatibus?
+							</p>
+							<button type='button' className='button'>
+								Resume
+							</button>
+						</li>
+						<li className='card'>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos ducimus, facilis alias
+								quisquam voluptatibus?
+							</p>
+							<button href='/' type='button' className='button'>
+								Testimonials
+							</button>
+						</li>
+						<li className='card'>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos ducimus, facilis alias
+								quisquam voluptatibus?
+							</p>
+							<button href='/' type='button' className='button'>
+								Projects
+							</button>
+						</li>
+					</ul>
 				</div>
 			</main>
 			<footer>
