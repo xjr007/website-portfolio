@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import instagramSvg from '../../assets/svg/instagramIcon.svg';
 import githubSvg from '../../assets/svg/githubIcon.svg';
@@ -27,24 +28,24 @@ const Home = props => {
 					</div>
 					<div className='navigation'>
 						<div className='navigation-link'>
-							<button className='button'>
+							<Link to='/testimonials' className='button'>
 								<span>Testimonials</span>
-							</button>
+							</Link>
 						</div>
 						<div className='navigation-link'>
-							<button className='button'>
+							<Link to='/projects' className='button'>
 								<span>Projects</span>
-							</button>
+							</Link>
 						</div>
 						<div className='navigation-link'>
-							<button className='button'>
+							<Link to='/resume' className='button'>
 								<span>Resume</span>
-							</button>
+							</Link>
 						</div>
 						<div className='navigation-link'>
-							<button className='button'>
+							<Link to='/contact-me' className='button'>
 								<span>Contact Me</span>
-							</button>
+							</Link>
 						</div>
 					</div>
 				</div>

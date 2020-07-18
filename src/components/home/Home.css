@@ -136,7 +136,7 @@ main {
 	margin-top: 2rem;
 }
 
-.about .navigation .navigation-link > button {
+.about .navigation .navigation-link .button {
 	display: flex;
 	padding: 0.7rem;
 	margin: 0.7rem;
