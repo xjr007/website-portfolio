@@ -124,6 +124,9 @@ const Contact = () => {
 						<ul>
 							<span>Explore</span>
 							<li>
+								<Link to='/'>Home</Link>
+							</li>
+							<li>
 								<Link to='/'>Testimonials</Link>
 							</li>
 							<li>
