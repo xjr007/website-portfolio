@@ -1,0 +1,23 @@
+.submit-suc-msg {
+	color: mediumaquamarine;
+}
+
+.submit-err-msg {
+	color: red;
+}
+
+.form-style {
+	margin-top: 10rem;
+	width: calc(100vw - 50%);
+}
+
+.form-style-group {
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+.form-style-button {
+	height: 2rem;
+	width: 7rem;
+	margin-left: 5rem;
+}

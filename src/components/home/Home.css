@@ -14,24 +14,24 @@ footer {
 }
 
 a {
-	text-decoration: none;
-	color: black;
-	transition: all 0.1s ease-in;
+	text-decoration: none !important;
+	color: black !important;
+	transition: all 0.1s ease-in !important;
 }
 
 a:hover {
-	color: orange;
+	color: orange !important;
 }
 
 ul {
-	list-style-type: none;
+	list-style-type: none !important;
 }
 
 /* Home */
 
 header {
-	display: flex;
-	justify-content: center;
+	display: flex !important;
+	justify-content: center !important;
 }
 
 .heading {
@@ -102,9 +102,7 @@ header {
 /* Main */
 
 main {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: flex !important;
 }
 
 .about {
@@ -113,52 +111,93 @@ main {
 	flex-flow: column;
 	flex-wrap: wrap;
 	padding: 1rem;
-	align-items: flex-start;
+	padding-top: 5rem;
 }
 .about .about-heading > h2 {
-	text-align: center;
 	margin-top: 2rem;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 }
 
 .about .about-heading > p {
-	margin-top: 2rem;
 	margin-bottom: 2rem;
-	margin-left: 1rem;
 	margin-right: 1rem;
 }
 
 .about .navigation {
 	display: flex;
-	justify-content: left;
-	align-items: center;
 	flex-wrap: wrap;
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 
 .about .navigation .navigation-link .button {
 	display: flex;
-	padding: 0.7rem;
-	margin: 0.7rem;
+	padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
+	margin-right: 2rem;
+	margin-top: 1rem;
 	background-color: orange;
 	align-items: center;
 	justify-content: center;
 	border-radius: 0;
-	font-size: 20px;
+	font-size: 16px;
 	border: none;
-	width: 10rem;
-	transition: all 0.5s ease-in-out;
+	width: 8rem;
+	transition: all 0.5s !important;
 	cursor: pointer;
+}
+
+.about .navigation .navigation-link .button > span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.7s;
+}
+
+.about .navigation .navigation-link .button span:after {
+	position: absolute;
+	opacity: 1;
+	top: 0;
+	transition: 0.7s;
 }
 
 .about .navigation .navigation-link .button:hover {
 	transform: translate(5%, 5%);
 }
 
-.about .navigation .navigation-link .button:hover:after {
+.about .navigation .navigation-link .button:hover span {
+	opacity: 1;
+}
+
+.about .navigation .navigation-link .button:after {
 	transform: translate(-5%, -5%);
 }
 
+.about .navigation .navigation-link .button:after span:after {
+	opacity: 1;
+}
+
+.language-icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	margin-left: 10rem;
+	margin-top: 3rem;
+	flex-flow: row;
+	flex-wrap: wrap;
+	width: 30rem;
+}
+
+.language-icons .prog-icon {
+	height: 128px;
+	width: 128px;
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
+
+.language-icons .prog-icon:hover {
+	transform: rotate(360deg);
+}
 /* Footer */
 
 .contact {
