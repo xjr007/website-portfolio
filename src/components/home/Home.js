@@ -1,11 +1,33 @@
-import React from 'react';
+import React, { createRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import instagramSvg from '../../assets/svg/instagramIcon.svg';
 import githubSvg from '../../assets/svg/githubIcon.svg';
 import linkedInSvg from '../../assets/svg/linkedInIcon.svg';
+import jsSvg from '../../assets/svg/javascriptIcon.svg';
+import reactSvg from '../../assets/svg/reactIcon.svg';
+import pySvg from '../../assets/svg/pythonIcon.svg';
+import djangoSvg from '../../assets/svg/djangoIcon.svg';
+import mySqlSvg from '../../assets/svg/mysqlIcon.svg';
+import { CONTACT } from '../../Routes';
+import { gsap } from 'gsap';
 
 const Home = props => {
+	const jsRef = createRef();
+	const reactRef = createRef();
+	const pyRef = createRef();
+	const djRef = createRef();
+	const sqlRef = createRef();
+
+	const iconRefs = [jsRef, reactRef, pyRef, djRef, sqlRef];
+
+	const timeLine = gsap.timeline({ defaults: { duration: 0.7 } });
+
+	useEffect(() => {
+		iconRefs.map(icon => timeLine.from(icon.current, { x: 1000 }));
+		// iconRefs.map(icon => timeLine.to(icon.current, { x: 0, rotate: 360, duration: 100 }));
+	});
+
 	return (
 		<div>
 			<header>
@@ -22,8 +44,8 @@ const Home = props => {
 					<div className='about-heading'>
 						<h2>About</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi libero ab, commodi veritatis
-							perferendis excepturi eius temporibus voluptatum. Iusto, quaerat?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Sequi libero ab, commodi
+							veritatis perferendis excepturi eius temporibus voluptatum. <br /> Iusto, quaerat?
 						</p>
 					</div>
 					<div className='navigation'>
@@ -43,11 +65,48 @@ const Home = props => {
 							</Link>
 						</div>
 						<div className='navigation-link'>
-							<Link to='/contact-me' className='button'>
+							<Link to={CONTACT} className='button'>
 								<span>Contact Me</span>
 							</Link>
 						</div>
 					</div>
+				</div>
+				<div className='language-icons'>
+					<img
+						ref={jsRef}
+						className='prog-icon'
+						src={jsSvg}
+						alt='JS Icon'
+						onMouseEnter={() => gsap.to(jsRef.current, { rotate: 360, duration: 100 })}
+					/>
+					<img
+						ref={reactRef}
+						className='prog-icon'
+						src={reactSvg}
+						alt='React Icon'
+						onMouseEnter={() => gsap.from(reactRef.current, { rotate: 360, duration: 100 })}
+					/>
+					<img
+						ref={pyRef}
+						className='prog-icon'
+						src={pySvg}
+						alt='Python Icon'
+						onMouseEnter={() => gsap.to(pyRef.current, { rotate: 360, duration: 100 })}
+					/>
+					<img
+						ref={djRef}
+						className='prog-icon'
+						src={djangoSvg}
+						alt='Django Icon'
+						onMouseEnter={() => gsap.from(djRef.current, { rotate: 360, duration: 100 })}
+					/>
+					<img
+						ref={sqlRef}
+						className='prog-icon'
+						src={mySqlSvg}
+						alt='mySQL Icon'
+						onMouseEnter={() => gsap.from(sqlRef.current, { rotate: 360, duration: 100 })}
+					/>
 				</div>
 			</main>
 			<footer>
@@ -84,16 +143,16 @@ const Home = props => {
 						<ul>
 							<span>Explore</span>
 							<li>
-								<a href='/'>Testimonials</a>
+								<Link to='/'>Testimonials</Link>
 							</li>
 							<li>
-								<a href='/'>Projects</a>
+								<Link to='/'>Projects</Link>
 							</li>
 							<li>
-								<a href='/'>Resume</a>
+								<Link to='/'>Resume</Link>
 							</li>
 							<li>
-								<a href='/'>Contact Me</a>
+								<Link to={CONTACT}>Contact Me</Link>
 							</li>
 						</ul>
 					</div>
