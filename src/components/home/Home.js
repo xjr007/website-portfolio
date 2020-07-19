@@ -83,6 +83,9 @@ const Home = props => {
 						<ul>
 							<span>Explore</span>
 							<li>
+								<a href='/'>Home</a>
+							</li>
+							<li>
 								<a href='/'>Testimonials</a>
 							</li>
 							<li>
