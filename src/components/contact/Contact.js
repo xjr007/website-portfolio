@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import instagramSvg from '../../assets/svg/instagramIcon.svg';
 import githubSvg from '../../assets/svg/githubIcon.svg';
 import linkedInSvg from '../../assets/svg/linkedInIcon.svg';
@@ -11,6 +11,11 @@ import './Contact.css';
 
 const Contact = () => {
 	const [status, setStatus] = useState('');
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	const onSubmit = e => {
 		e.preventDefault();
 		const form = e.target;

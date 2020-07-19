@@ -19,6 +19,10 @@ const Home = props => {
 	const djRef = createRef();
 	const sqlRef = createRef();
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	const iconRefs = [jsRef, reactRef, pyRef, djRef, sqlRef];
 
 	const timeLine = gsap.timeline({ defaults: { duration: 0.7 } });
