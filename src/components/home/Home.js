@@ -19,14 +19,13 @@ const Home = props => {
 	const djRef = createRef();
 	const sqlRef = createRef();
 
-	const timeLine = gsap.timeline({ defaults: { duration: 0.5 } });
+	const iconRefs = [jsRef, reactRef, pyRef, djRef, sqlRef];
+
+	const timeLine = gsap.timeline({ defaults: { duration: 0.7 } });
 
 	useEffect(() => {
-		timeLine.from(jsRef.current, { x: 1000, duration: 1 });
-		timeLine.from(reactRef.current, { x: 1000, duration: 1 });
-		timeLine.from(pyRef.current, { x: 1000, duration: 1 });
-		timeLine.from(djRef.current, { x: 1000, duration: 1 });
-		timeLine.from(sqlRef.current, { x: 1000, duration: 1 });
+		iconRefs.map(icon => timeLine.from(icon.current, { x: 1000 }));
+		// iconRefs.map(icon => timeLine.to(icon.current, { x: 0, rotate: 360, duration: 100 }));
 	});
 
 	return (
@@ -73,11 +72,41 @@ const Home = props => {
 					</div>
 				</div>
 				<div className='language-icons'>
-					<img ref={jsRef} className='prog-icon' src={jsSvg} alt='JS Icon' />
-					<img ref={reactRef} className='prog-icon' src={reactSvg} alt='React Icon' />
-					<img ref={pyRef} className='prog-icon' src={pySvg} alt='Python Icon' />
-					<img ref={djRef} className='prog-icon' src={djangoSvg} alt='Django Icon' />
-					<img ref={sqlRef} className='prog-icon' src={mySqlSvg} alt='mySQL Icon' />
+					<img
+						ref={jsRef}
+						className='prog-icon'
+						src={jsSvg}
+						alt='JS Icon'
+						onMouseEnter={() => gsap.to(jsRef.current, { rotate: 360, duration: 100 })}
+					/>
+					<img
+						ref={reactRef}
+						className='prog-icon'
+						src={reactSvg}
+						alt='React Icon'
+						onMouseEnter={() => gsap.from(reactRef.current, { rotate: 360, duration: 100 })}
+					/>
+					<img
+						ref={pyRef}
+						className='prog-icon'
+						src={pySvg}
+						alt='Python Icon'
+						onMouseEnter={() => gsap.to(pyRef.current, { rotate: 360, duration: 100 })}
+					/>
+					<img
+						ref={djRef}
+						className='prog-icon'
+						src={djangoSvg}
+						alt='Django Icon'
+						onMouseEnter={() => gsap.from(djRef.current, { rotate: 360, duration: 100 })}
+					/>
+					<img
+						ref={sqlRef}
+						className='prog-icon'
+						src={mySqlSvg}
+						alt='mySQL Icon'
+						onMouseEnter={() => gsap.from(sqlRef.current, { rotate: 360, duration: 100 })}
+					/>
 				</div>
 			</main>
 			<footer>
