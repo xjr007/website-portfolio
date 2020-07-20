@@ -37,7 +37,7 @@ const Contact = () => {
 
 	return (
 		<Fragment>
-			<header>Navbar</header>
+			<div className='navbar'>Navbar</div>
 			<main>
 				<Form
 					className='form-style'
