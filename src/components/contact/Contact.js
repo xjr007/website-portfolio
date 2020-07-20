@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 // import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Contact.css';
+import { CONTACT } from '../../Routes';
 
 const Contact = () => {
 	const [status, setStatus] = useState('');
@@ -136,7 +137,7 @@ const Contact = () => {
 								<Link to='/'>Resume</Link>
 							</li>
 							<li>
-								<Link to='/'>Contact Me</Link>
+								<Link to={CONTACT}>Contact Me</Link>
 							</li>
 						</ul>
 					</div>
