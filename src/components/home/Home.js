@@ -20,16 +20,38 @@ const Home = props => {
 	const djRef = createRef();
 	const sqlRef = createRef();
 	const nodeRef = createRef();
+	const aboutRef = createRef();
+	const testRef = createRef();
+	const resRef = createRef();
+	const projRef = createRef();
+	const conRef = createRef();
+
+	const iconRefs = [jsRef, djRef, reactRef, nodeRef, pyRef, sqlRef];
+
+	const btnRefs = [testRef, projRef, resRef, conRef];
+
+	const tIcon = gsap.timeline({ defaults: { duration: 0.5 } });
+	const tBtn = gsap.timeline({ defaults: { duration: 0.3 } });
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const iconRefs = [jsRef, djRef, reactRef, nodeRef, pyRef, sqlRef];
-
-	const timeLine = gsap.timeline({ defaults: { duration: 0.7 } });
-
 	useEffect(() => {
-		iconRefs.map(icon => timeLine.from(icon.current, { x: 1000 }));
+		// iconRefs.map(icon => timeLine.from(icon.current, { x: 500 }).to(icon.current, { x: 0 }));
+
+		iconRefs.map(icon => {
+			return tIcon
+				.from(icon.current, { x: 500, duration: 0.5 })
+				.to(icon.current, { x: 0, duration: 0.5 });
+		});
+
+		btnRefs.map(btn => {
+			return tBtn.from(btn.current, { opacity: 0 }).to(btn.current, { opacity: 1, duration: 0.5 });
+		});
+
+		gsap.from(aboutRef.current, { x: 500 });
+		gsap.to(aboutRef.current, { x: 0, duration: 1 });
 		// iconRefs.map(icon => timeLine.to(icon.current, { x: 0, rotate: 360, duration: 100 }));
 	});
 
@@ -46,7 +68,7 @@ const Home = props => {
 			</header>
 			<main>
 				<div id='about' className='about'>
-					<div className='about-heading'>
+					<div ref={aboutRef} className='about-heading'>
 						<h1>
 							<span>About</span>
 						</h1>
@@ -57,22 +79,22 @@ const Home = props => {
 					</div>
 					<div className='navigation'>
 						<div className='navigation-link'>
-							<Link to='/testimonials' className='button'>
+							<Link to='/testimonials' className='button' ref={testRef}>
 								<span>Testimonials</span>
 							</Link>
 						</div>
 						<div className='navigation-link'>
-							<Link to='/projects' className='button'>
+							<Link to='/projects' className='button' ref={projRef}>
 								<span>Projects</span>
 							</Link>
 						</div>
 						<div className='navigation-link'>
-							<Link to='/resume' className='button'>
+							<Link to='/resume' className='button' ref={resRef}>
 								<span>Resume</span>
 							</Link>
 						</div>
 						<div className='navigation-link'>
-							<Link to={CONTACT} className='button'>
+							<Link to={CONTACT} className='button' ref={conRef}>
 								<span>Contact Me</span>
 							</Link>
 						</div>
@@ -128,7 +150,7 @@ const Home = props => {
 					<h3>Contact</h3>
 					<div className='social-list'>
 						<ul>
-							<span>Social media</span>
+							<span>Social</span>
 							<li>
 								<a
 									href='https://www.instagram.com/aaqiel_behardien/'

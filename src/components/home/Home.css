@@ -34,19 +34,20 @@ ul {
 header {
 	display: flex !important;
 	justify-content: center !important;
+	align-items: center;
+	height: 100vh !important;
 }
 
 .heading {
 	display: flex;
-	flex-direction: column;
 	flex-wrap: wrap;
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	width: 50%;
 	margin: 0;
-	padding: 2rem;
 	border: solid;
+	height: 50%;
+	width: 50%;
 }
 
 .heading h1 {
@@ -114,6 +115,8 @@ main {
 	flex-wrap: wrap;
 	padding: 1rem;
 	padding-top: 5rem;
+	height: 70vh;
+	width: auto;
 }
 .about .about-heading > h2 {
 	margin-top: 2rem;
@@ -149,33 +152,33 @@ main {
 }
 
 .about .navigation .navigation-link .button > span {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: 0.7s;
+	cursor: pointer !important;
+	display: inline-block !important;
+	position: relative !important;
+	transition: 0.7s !important;
 }
 
 .about .navigation .navigation-link .button span:after {
-	position: absolute;
-	opacity: 1;
-	top: 0;
-	transition: 0.7s;
+	position: absolute !important;
+	opacity: 1 !important;
+	top: 0 !important;
+	transition: 0.7s !important;
 }
 
 .about .navigation .navigation-link .button:hover {
-	transform: translate(5%, 5%);
+	transform: translate(5%, 5%) !important;
 }
 
 .about .navigation .navigation-link .button:hover span {
-	opacity: 1;
+	opacity: 1 !important;
 }
 
 .about .navigation .navigation-link .button:after {
-	transform: translate(-5%, -5%);
+	transform: translate(-5%, -5%) !important;
 }
 
 .about .navigation .navigation-link .button:after span:after {
-	opacity: 1;
+	opacity: 1 !important;
 }
 
 .language-icons {
@@ -195,20 +198,29 @@ main {
 	width: 128px;
 	margin-top: 1rem;
 	margin-left: 1rem;
+	transition: transform 0.3s;
 }
 
 .language-icons .prog-icon:hover {
-	transform: rotate(360deg);
+	transform: rotate(360deg) !important;
 }
 /* Footer */
 
+footer {
+	background-color: #dcdcdc;
+}
+
 .contact {
+	height: 34vh;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 }
 
 .contact > h3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	grid-column: 1;
 	grid-row: 1;
 }
@@ -239,6 +251,7 @@ main {
 	grid-row: 3;
 	grid-column: 2;
 	text-decoration: underline;
+	height: 1rem;
 }
 
 /* Icons */
