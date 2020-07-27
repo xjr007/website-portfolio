@@ -1,17 +1,15 @@
 import React, { createRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css';
-import instagramSvg from '../../assets/svg/instagramIcon.svg';
-import githubSvg from '../../assets/svg/githubIcon.svg';
-import linkedInSvg from '../../assets/svg/linkedInIcon.svg';
+
 import jsSvg from '../../assets/svg/javascriptIcon.svg';
 import reactSvg from '../../assets/svg/reactIcon.svg';
 import pySvg from '../../assets/svg/pythonIcon.svg';
 import djangoSvg from '../../assets/svg/djangoIcon.svg';
 import mySqlSvg from '../../assets/svg/mysqlIcon.svg';
 import nodeSvg from '../../assets/svg/nodeIcon.svg';
-import { CONTACT } from '../../Routes';
+import { ROUTES } from '../../GlobalVars';
 import { gsap } from 'gsap';
+import ContactFooter from '../layout/ContactFooter';
 
 const Home = props => {
 	const jsRef = createRef();
@@ -30,7 +28,7 @@ const Home = props => {
 
 	const btnRefs = [testRef, projRef, resRef, conRef];
 
-	const tIcon = gsap.timeline({ defaults: { duration: 0.5 } });
+	const tIcon = gsap.timeline({ defaults: { duration: 0.5, overflow: 'hidden' } });
 	const tBtn = gsap.timeline({ defaults: { duration: 0.3 } });
 
 	useEffect(() => {
@@ -50,23 +48,23 @@ const Home = props => {
 			return tBtn.from(btn.current, { opacity: 0 }).to(btn.current, { opacity: 1, duration: 0.5 });
 		});
 
-		gsap.from(aboutRef.current, { x: 500 });
+		gsap.from(aboutRef.current, { x: -500 });
 		gsap.to(aboutRef.current, { x: 0, duration: 1 });
 		// iconRefs.map(icon => timeLine.to(icon.current, { x: 0, rotate: 360, duration: 100 }));
 	});
 
 	return (
 		<div>
-			<header>
+			<div className='header'>
 				<div className='heading'>
-					<h1>Aaqiel Behardien</h1>
+					<h1>Hi, I am Aaqiel Behardien</h1>
 					<p>Junior Web Developer</p>
 					<a href='#about' className='button' type='button'>
 						<span>Explore</span>
 					</a>
 				</div>
-			</header>
-			<main>
+			</div>
+			<div>
 				<div id='about' className='about'>
 					<div ref={aboutRef} className='about-heading'>
 						<h1>
@@ -79,22 +77,22 @@ const Home = props => {
 					</div>
 					<div className='navigation'>
 						<div className='navigation-link'>
-							<Link to='/testimonials' className='button' ref={testRef}>
+							<Link to={ROUTES.TESTIMONIALS} className='button' ref={testRef}>
 								<span>Testimonials</span>
 							</Link>
 						</div>
 						<div className='navigation-link'>
-							<Link to='/projects' className='button' ref={projRef}>
+							<Link to={ROUTES.PROJECTS} className='button' ref={projRef}>
 								<span>Projects</span>
 							</Link>
 						</div>
 						<div className='navigation-link'>
-							<Link to='/resume' className='button' ref={resRef}>
+							<Link to={ROUTES.RESUME} className='button' ref={resRef}>
 								<span>Resume</span>
 							</Link>
 						</div>
 						<div className='navigation-link'>
-							<Link to={CONTACT} className='button' ref={conRef}>
+							<Link to={ROUTES.CONTACT} className='button' ref={conRef}>
 								<span>Contact Me</span>
 							</Link>
 						</div>
@@ -144,60 +142,8 @@ const Home = props => {
 						onMouseEnter={() => gsap.to(sqlRef.current, { rotate: 360, duration: 100 })}
 					/>
 				</div>
-			</main>
-			<footer>
-				<div className='contact'>
-					<h3>Contact</h3>
-					<div className='social-list'>
-						<ul>
-							<span>Social</span>
-							<li>
-								<a
-									href='https://www.instagram.com/aaqiel_behardien/'
-									target='_blank'
-									rel='noopener noreferrer'>
-									<img src={instagramSvg} className='instagram' alt='Instgram' />
-								</a>
-							</li>
-							<li>
-								<a href='https://www.github.com/xjr007' target='_blank' rel='noopener noreferrer'>
-									{' '}
-									<img src={githubSvg} className='github' alt='Github' />
-								</a>
-							</li>
-							<li>
-								<a
-									href='https://www.linkedin.com/in/aaqiel-behardien-53a2aa161/'
-									target='_blank'
-									rel='noopener noreferrer'>
-									<img src={linkedInSvg} className='linkedIn' alt='LinkedIn' />
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div className='footer-navigation'>
-						<ul>
-							<span>Explore</span>
-							<li>
-								<Link to='/'>Home</Link>
-							</li>
-							<li>
-								<Link to='/'>Testimonials</Link>
-							</li>
-							<li>
-								<Link to='/'>Projects</Link>
-							</li>
-							<li>
-								<Link to='/'>Resume</Link>
-							</li>
-							<li>
-								<Link to={CONTACT}>Contact Me</Link>
-							</li>
-						</ul>
-					</div>
-					<p>All rights reserved.</p>
-				</div>
-			</footer>
+			</div>
+			<ContactFooter />
 		</div>
 	);
 };
