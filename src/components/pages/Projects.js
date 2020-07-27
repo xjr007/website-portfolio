@@ -1,18 +1,16 @@
 import React, { useEffect } from 'react';
-// import Card from '../layout/CardLayout';
 import { PROJECT_LINK } from '../../GlobalVars';
 import ContactFooter from '../layout/ContactFooter';
-import keeperIMG from '../../assets/img/contactkeeper.jpg';
-import gitIMG from '../../assets/img/githubfinder.jpg';
-import lcIMG from '../../assets/img/lconline.jpg';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
+import Navbar from '../layout/Navbar';
 const Projects = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 	return (
 		<div>
+			<Navbar />
 			<div className='project-head'>
 				<h1>Projects</h1>
 				<h5>Explore some of my recent applications.</h5>

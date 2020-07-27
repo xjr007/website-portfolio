@@ -71,8 +71,8 @@ const Home = props => {
 							<span>About</span>
 						</h1>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Sequi libero ab, commodi
-							veritatis perferendis excepturi eius temporibus voluptatum. <br /> Iusto, quaerat?
+							<span>"</span> In the year of the pandemic (2020), that's when I decided it is time to
+							re-shape my life. Join me on my journey and explore. <span>"</span>
 						</p>
 					</div>
 					<div className='navigation'>

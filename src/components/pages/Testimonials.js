@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Cards from '../layout/Cards';
 import ContactFooter from '../layout/ContactFooter';
+import Navbar from '../layout/Navbar';
 
 const Testimonials = () => {
 	useEffect(() => {
@@ -8,6 +9,7 @@ const Testimonials = () => {
 	}, []);
 	return (
 		<div className='tesimonials'>
+			<Navbar />
 			<h1 className='test'>Testimonials</h1>
 
 			<Cards />
