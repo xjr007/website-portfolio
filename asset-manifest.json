@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/website-portfolio/static/css/main.099ab5ea.chunk.css",
-    "main.js": "/website-portfolio/static/js/main.fc02684b.chunk.js",
-    "main.js.map": "/website-portfolio/static/js/main.fc02684b.chunk.js.map",
+    "main.css": "/website-portfolio/static/css/main.4250693f.chunk.css",
+    "main.js": "/website-portfolio/static/js/main.be3911ad.chunk.js",
+    "main.js.map": "/website-portfolio/static/js/main.be3911ad.chunk.js.map",
     "runtime-main.js": "/website-portfolio/static/js/runtime-main.16174c02.js",
     "runtime-main.js.map": "/website-portfolio/static/js/runtime-main.16174c02.js.map",
     "static/css/2.af3c1da9.chunk.css": "/website-portfolio/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.ffa347d2.chunk.js": "/website-portfolio/static/js/2.ffa347d2.chunk.js",
-    "static/js/2.ffa347d2.chunk.js.map": "/website-portfolio/static/js/2.ffa347d2.chunk.js.map",
+    "static/js/2.917afca2.chunk.js": "/website-portfolio/static/js/2.917afca2.chunk.js",
+    "static/js/2.917afca2.chunk.js.map": "/website-portfolio/static/js/2.917afca2.chunk.js.map",
     "index.html": "/website-portfolio/index.html",
-    "precache-manifest.ff9709c744c5e1ca7b1bb6e7e86b2044.js": "/website-portfolio/precache-manifest.ff9709c744c5e1ca7b1bb6e7e86b2044.js",
+    "precache-manifest.a778f7eed10b284e0d3de34478cbdb44.js": "/website-portfolio/precache-manifest.a778f7eed10b284e0d3de34478cbdb44.js",
     "service-worker.js": "/website-portfolio/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/website-portfolio/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.099ab5ea.chunk.css.map": "/website-portfolio/static/css/main.099ab5ea.chunk.css.map",
-    "static/js/2.ffa347d2.chunk.js.LICENSE.txt": "/website-portfolio/static/js/2.ffa347d2.chunk.js.LICENSE.txt",
+    "static/css/main.4250693f.chunk.css.map": "/website-portfolio/static/css/main.4250693f.chunk.css.map",
+    "static/js/2.917afca2.chunk.js.LICENSE.txt": "/website-portfolio/static/js/2.917afca2.chunk.js.LICENSE.txt",
+    "static/media/Index.css": "/website-portfolio/static/media/coffee-cup-yellow.e5eff9ce.jpg",
     "static/media/djangoIcon.svg": "/website-portfolio/static/media/djangoIcon.47e62727.svg",
     "static/media/githubIcon.svg": "/website-portfolio/static/media/githubIcon.0c0d0a7b.svg",
     "static/media/instagramIcon.svg": "/website-portfolio/static/media/instagramIcon.62593ffa.svg",
@@ -27,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.16174c02.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.ffa347d2.chunk.js",
-    "static/css/main.099ab5ea.chunk.css",
-    "static/js/main.fc02684b.chunk.js"
+    "static/js/2.917afca2.chunk.js",
+    "static/css/main.4250693f.chunk.css",
+    "static/js/main.be3911ad.chunk.js"
   ]
 }
