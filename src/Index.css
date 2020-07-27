@@ -10,12 +10,11 @@
 
 a {
 	text-decoration: none !important;
-	color: black !important;
 	transition: all 0.1s ease-in !important;
 }
 
 a:hover {
-	color: orange !important;
+	color: black !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -49,12 +48,6 @@ a:hover {
 		flex-direction: row;
 		margin-left: 10rem;
 		margin-right: 10rem;
-	}
-
-	.projects {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 	}
 }
 
@@ -284,6 +277,10 @@ a:hover {
 	opacity: 1 !important;
 }
 
+.about .navigation .navigation-link .button span {
+	color: black;
+}
+
 .about .navigation .navigation-link .button:after {
 	transform: translate(-5%, -5%) !important;
 }
@@ -333,6 +330,7 @@ a:hover {
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	color: darkorange;
 }
 
 .contact .social-list {
@@ -351,9 +349,14 @@ a:hover {
 	text-align: center;
 }
 
-.contact .footer-navigation > ul > li {
+.contact .footer-navigation ul li a {
 	margin: 0.5rem 0;
 	font-size: 12px;
+	color: black;
+}
+
+.contact .footer-navigation ul li a:hover {
+	color: darkorange !important;
 }
 
 .contact-section > p {
@@ -419,11 +422,44 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	margin: 2rem;
 	flex-direction: column;
+	background-color: rgb(255, 238, 205);
+	color: black;
 }
 
 .project-card {
 	width: 196px;
 	height: 196px;
+}
+
+.card-style {
+	width: 18rem;
+	box-shadow: 5px grey;
+}
+
+.card-titled {
+	color: brown;
+}
+
+.projects span {
+	color: brown;
+}
+
+.project-head {
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.project-head h1 {
+	margin-bottom: 2rem;
+}
+
+.project-page {
+	background-color: orange;
+}
+
+.link-card:hover {
+	color: orange !important;
 }
