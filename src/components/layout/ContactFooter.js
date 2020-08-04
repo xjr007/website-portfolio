@@ -51,7 +51,7 @@ export const contactFooter = () => {
 								<Link to={ROUTES.PROJECTS}>Projects</Link>
 							</li>
 							<li>
-								<Link to='/'>Resume</Link>
+								<Link to={ROUTES.RESUME}>Resume</Link>
 							</li>
 							<li>
 								<Link to={ROUTES.CONTACT}>Contact Me</Link>
