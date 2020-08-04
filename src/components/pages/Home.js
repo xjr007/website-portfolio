@@ -58,7 +58,7 @@ const Home = props => {
 			<div className='header'>
 				<div className='heading'>
 					<h1>Hi, I am Aaqiel Behardien</h1>
-					<p>Junior Web Developer</p>
+					<p>Junior MERN Stack Developer</p>
 					<a href='#about' className='button' type='button'>
 						<span>Explore</span>
 					</a>
