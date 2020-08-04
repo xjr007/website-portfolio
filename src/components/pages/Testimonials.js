@@ -9,7 +9,6 @@ const Testimonials = () => {
 	}, []);
 	return (
 		<div className='tesimonials'>
-			<Navbar />
 			<h1 className='test'>Testimonials</h1>
 
 			<Cards />

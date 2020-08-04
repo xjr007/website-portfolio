@@ -50,7 +50,6 @@ const Contact = () => {
 
 	return (
 		<div>
-			<Navbar />
 			<div className='contact-design'>
 				<Form
 					noValidate

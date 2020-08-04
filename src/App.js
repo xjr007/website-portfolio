@@ -7,10 +7,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Testimonials from './components/pages/Testimonials';
 import Projects from './components/pages/Projects';
 import Resume from './components/pages/Resume';
+import Navbar from './components/layout/Navbar';
 function App() {
 	return (
 		<Fragment>
 			<Router>
+				<Navbar />
 				<Switch>
 					<Route exact path={ROUTES.HOME} component={Home} />
 					<Route exact path={ROUTES.CONTACT} component={Contact} />

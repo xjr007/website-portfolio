@@ -10,7 +10,6 @@ const Projects = () => {
 	}, []);
 	return (
 		<div>
-			<Navbar />
 			<div className='project-head'>
 				<h1>Projects</h1>
 				<h5>Explore some of my recent applications.</h5>
