@@ -54,6 +54,20 @@ a:hover {
 		display: flex;
 		flex-direction: row !important;
 	}
+
+	.more-info {
+		display: grid !important;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
+	.resume-work {
+		grid-column: 1;
+		text-align: left;
+	}
+	.resume-education {
+		grid-column: 2;
+		text-align: end;
+	}
 }
 
 @media only screen and (min-width: 600px) {
@@ -558,12 +572,12 @@ a:hover {
 }
 
 .resume .resume-left .resume-skills ul li {
-	color: white;
+	color: black;
 	justify-content: space-between;
 }
 
 .resume-skills ul li {
-	color: white;
+	color: black;
 	justify-content: space-between;
 }
 
@@ -624,7 +638,6 @@ a:hover {
 
 .resume .resume-right .resume-work ul,
 .resume .resume-right .resume-education ul {
-	padding-left: 40px;
 	overflow: hidden;
 }
 
@@ -655,6 +668,7 @@ a:hover {
 	width: 6px;
 	height: 6px;
 	border-radius: 50%;
+	color: black;
 }
 
 .resume .resume-right .resume-work ul li:after,
@@ -732,4 +746,11 @@ a:hover {
 
 .contact-info h2 {
 	margin-bottom: 2rem;
+}
+
+.more-info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
 }

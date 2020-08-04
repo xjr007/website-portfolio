@@ -175,67 +175,16 @@ const Resume = () => {
 										<div className='info'>
 											<p className='semi-bold'>RSI Construction</p>
 											<p>
-												Duties: <br /> ● Assisting with plumbing and demolition <br />●
-												Collected / checked / tracked inventory <br />● Driving to job
-												sites <br />● Collection of heavy machinery and building
-												equipment <br />● Manual labour
+												Duties: <br /> Assisting with plumbing and demolition <br />
+												Collected / checked / tracked inventory <br /> Driving to job
+												sites <br /> Collection of heavy machinery and building
+												equipment <br /> Manual labour
 											</p>
 										</div>
 									</li>
 								</ul>
 							</div>
-							<div className='resume-item resume-education'>
-								<div className='title'>
-									<p className='bold'>Education</p>
-								</div>
-								<ul>
-									<li>
-										<div className='date'>2020</div>
-										<div className='info'>
-											<p className='semi-bold'>Salesian Life Choices Academy</p>
-											<p>HTML5, MERN Stack, Python, mySQL</p>
-											<p>
-												Period: 6 months <br />
-												Completed: 50%
-											</p>
-										</div>
-									</li>
-									<li>
-										<div className='date'>2019</div>
-										<div className='info'>
-											<p className='semi-bold'>Islamic Studies</p>
-											<p>
-												Period: For 1 year <br />
-												Course: Memorize holy book (Quraan)
-												<br />
-												Completed: No
-											</p>
-										</div>
-									</li>
-									<li>
-										<div className='date'>2018</div>
-										<div className='info'>
-											<p className='semi-bold'>University of the Western Cape</p>
-											<p>
-												Period: For 1 year <br />
-												Course: B.Com General <br />
-												Completed: No
-											</p>
-										</div>
-									</li>
-									<li>
-										<div className='date'>2017</div>
-										<div className='info'>
-											<p className='semi-bold'>
-												Cape Academy of Maths, Science and Technology
-											</p>
-											<p>NSC Certificate</p>
-										</div>
-									</li>
-									<br />
-									<br />
-								</ul>
-							</div>
+
 							<div className='resume-item resume-hobby'>
 								<div className='title'>
 									<p className='bold'>hobby</p>
