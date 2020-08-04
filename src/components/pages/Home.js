@@ -9,7 +9,6 @@ import mySqlSvg from '../../assets/svg/mysqlIcon.svg';
 import nodeSvg from '../../assets/svg/nodeIcon.svg';
 import { ROUTES } from '../../GlobalVars';
 import { gsap } from 'gsap';
-import ContactFooter from '../layout/ContactFooter';
 
 const Home = props => {
 	const jsRef = createRef();
@@ -46,8 +45,8 @@ const Home = props => {
 							<span>About</span>
 						</h1>
 						<p>
-							<span>"</span> In the year of the pandemic (2020), that's when I decided it is time to
-							re-shape my life. Join me on my journey and explore. <span>"</span>
+							<span>"</span> In the year of the pandemic (2020), that's when I decided it is
+							time to re-shape my life. Join me on my journey and explore. <span>"</span>
 						</p>
 					</div>
 					<div className='navigation'>
@@ -118,7 +117,6 @@ const Home = props => {
 					/>
 				</div>
 			</div>
-			<ContactFooter />
 		</div>
 	);
 };

@@ -7,7 +7,6 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import TerrainIcon from '@material-ui/icons/Terrain';
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
-import ContactFooter from '../layout/ContactFooter';
 
 const Resume = () => {
 	useEffect(() => {
@@ -133,11 +132,12 @@ const Resume = () => {
 									<p className='bold'>About Me</p>
 								</div>
 								<p>
-									I am a hard-working, all-rounded individual who is dedicated to delivering his best and
-									quick to adapt to any environment. When behind a computer screen, I am in my element.
-									Whether working with a team or alone, I aim to propel the company forward. <br /> Although
-									passionate about software development, I aspire to become a full-stack developer and am
-									willing to broaden my developing skills wherever I can.
+									I am a hard-working, all-rounded individual who is dedicated to
+									delivering his best and quick to adapt to any environment. When behind a
+									computer screen, I am in my element. Whether working with a team or
+									alone, I aim to propel the company forward. <br /> Although passionate
+									about software development, I aspire to become a full-stack developer and
+									am willing to broaden my developing skills wherever I can.
 								</p>
 							</div>
 							<div className='resume-item resume-more-info'>
@@ -145,12 +145,13 @@ const Resume = () => {
 									<p className='bold'>How I became passionate about programming</p>
 								</div>
 								<p>
-									I first came across programming in grade 10. I had joined the school halfway through the
-									third term and had 2 weeks to complete a scratch project that had a weight of 75% of my
-									assessment mark. Although faced with many challenges and barely passing, I found that I was
-									quick to pick up on coding and later started coding in Delphi. I then became familiar with
-									databases using Microsoft Access with Delphi and since then my passion for development has
-									grown even stronger.
+									I first came across programming in grade 10. I had joined the school
+									halfway through the third term and had 2 weeks to complete a scratch
+									project that had a weight of 75% of my assessment mark. Although faced
+									with many challenges and barely passing, I found that I was quick to pick
+									up on coding and later started coding in Delphi. I then became familiar
+									with databases using Microsoft Access with Delphi and since then my
+									passion for development has grown even stronger.
 								</p>
 							</div>
 
@@ -174,9 +175,10 @@ const Resume = () => {
 										<div className='info'>
 											<p className='semi-bold'>RSI Construction</p>
 											<p>
-												Duties: <br /> ● Assisting with plumbing and demolition <br />● Collected / checked /
-												tracked inventory <br />● Driving to job sites <br />● Collection of heavy machinery and
-												building equipment <br />● Manual labour
+												Duties: <br /> ● Assisting with plumbing and demolition <br />●
+												Collected / checked / tracked inventory <br />● Driving to job
+												sites <br />● Collection of heavy machinery and building
+												equipment <br />● Manual labour
 											</p>
 										</div>
 									</li>
@@ -224,7 +226,9 @@ const Resume = () => {
 									<li>
 										<div className='date'>2017</div>
 										<div className='info'>
-											<p className='semi-bold'>Cape Academy of Maths, Science and Technology</p>
+											<p className='semi-bold'>
+												Cape Academy of Maths, Science and Technology
+											</p>
 											<p>NSC Certificate</p>
 										</div>
 									</li>
@@ -285,7 +289,6 @@ const Resume = () => {
 							</div>
 						</div>
 					</div>
-					<ContactFooter />
 				</div>
 			</div>
 		</Fragment>

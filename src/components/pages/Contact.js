@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import ContactFooter from '../layout/ContactFooter';
+import RoomIcon from '@material-ui/icons/Room';
+import PhoneIcon from '@material-ui/icons/Phone';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 const Contact = () => {
 	const [status, setStatus] = useState('');
 	const [validated, setValidated] = useState(false);
@@ -49,6 +51,34 @@ const Contact = () => {
 
 	return (
 		<div>
+			<div className='contact-info '>
+				<h2>Contact info</h2>
+				<ul className=' contact-lg d-flex flex-column mb-5'>
+					<li className='d-flex flex-row m-3 width-auto '>
+						<div className='icon'>
+							<RoomIcon className='icon-obj' />
+						</div>
+
+						<div className='data ml-2'>48 Derby Road, Lansdowne, SA</div>
+					</li>
+					<li className='d-flex flex-row m-3 '>
+						<div className='icon'>
+							<PhoneIcon className='icon-obj' />
+						</div>
+
+						<div className='data ml-2'>081 564 3390</div>
+					</li>
+					<li className='d-flex flex-row m-3 '>
+						<div className='icon'>
+							<MailOutlineIcon className='icon-obj' />
+						</div>
+
+						<div className='data ml-2'>
+							<p>abaaqielbehardien@gmail.com</p>
+						</div>
+					</li>
+				</ul>
+			</div>
 			<div className='contact-design'>
 				<Form
 					noValidate
@@ -56,11 +86,12 @@ const Contact = () => {
 					className='form-design align-items-center flex-column  d-flex m-3'
 					onSubmit={onSubmit}
 					action='https://formspree.io/mjvapdoq'
-					method='POST'>
+					method='POST'
+				>
 					<div className='form-heading mt-5 d-flex flex-column align-items-center'>
-						<h3>
+						<h5>
 							<span className='con-span'>Got something to say?</span>
-						</h3>
+						</h5>
 						<p> Feel free to drop a comment below.</p>
 					</div>
 
@@ -71,9 +102,18 @@ const Contact = () => {
 							{' '}
 							<Form.Group className='form-name'>
 								<Form.Label htmlFor='name'>Name</Form.Label>
-								<Form.Control id='name' name='name' type='text' value={name} onChange={onChange} required />
+								<Form.Control
+									id='name'
+									name='name'
+									type='text'
+									value={name}
+									onChange={onChange}
+									required
+								/>
 
-								<Form.Control.Feedback type='invalid'>Please fill this in.</Form.Control.Feedback>
+								<Form.Control.Feedback type='invalid'>
+									Please fill this in.
+								</Form.Control.Feedback>
 							</Form.Group>
 						</Col>
 
@@ -89,7 +129,9 @@ const Contact = () => {
 									required
 								/>
 
-								<Form.Control.Feedback type='invalid'>Please fill this in.</Form.Control.Feedback>
+								<Form.Control.Feedback type='invalid'>
+									Please fill this in.
+								</Form.Control.Feedback>
 							</Form.Group>
 						</Col>
 
@@ -105,7 +147,9 @@ const Contact = () => {
 								required
 							/>
 
-							<Form.Control.Feedback type='invalid'>Please fill this in.</Form.Control.Feedback>
+							<Form.Control.Feedback type='invalid'>
+								Please fill this in.
+							</Form.Control.Feedback>
 						</Form.Group>
 					</Form.Row>
 
@@ -123,7 +167,6 @@ const Contact = () => {
 					)}
 				</Form>
 			</div>
-			<ContactFooter />
 		</div>
 	);
 };

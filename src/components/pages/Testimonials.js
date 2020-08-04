@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Cards from '../layout/Cards';
-import ContactFooter from '../layout/ContactFooter';
 
 const Testimonials = () => {
 	useEffect(() => {
@@ -11,8 +10,6 @@ const Testimonials = () => {
 			<h1 className='test'>Testimonials</h1>
 
 			<Cards />
-
-			<ContactFooter />
 		</div>
 	);
 };
