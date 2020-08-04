@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/website-portfolio/static/css/main.0139d1d6.chunk.css",
+    "main.css": "/website-portfolio/static/css/main.92824478.chunk.css",
     "main.js": "/website-portfolio/static/js/main.4ac98c2b.chunk.js",
     "main.js.map": "/website-portfolio/static/js/main.4ac98c2b.chunk.js.map",
     "runtime-main.js": "/website-portfolio/static/js/runtime-main.16174c02.js",
@@ -9,10 +9,10 @@
     "static/js/2.75a3afb0.chunk.js": "/website-portfolio/static/js/2.75a3afb0.chunk.js",
     "static/js/2.75a3afb0.chunk.js.map": "/website-portfolio/static/js/2.75a3afb0.chunk.js.map",
     "index.html": "/website-portfolio/index.html",
-    "precache-manifest.bbfd38815606e51603937d5dcb0c5469.js": "/website-portfolio/precache-manifest.bbfd38815606e51603937d5dcb0c5469.js",
+    "precache-manifest.473206b44aacc85af9b96630e6e031e8.js": "/website-portfolio/precache-manifest.473206b44aacc85af9b96630e6e031e8.js",
     "service-worker.js": "/website-portfolio/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/website-portfolio/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.0139d1d6.chunk.css.map": "/website-portfolio/static/css/main.0139d1d6.chunk.css.map",
+    "static/css/main.92824478.chunk.css.map": "/website-portfolio/static/css/main.92824478.chunk.css.map",
     "static/js/2.75a3afb0.chunk.js.LICENSE.txt": "/website-portfolio/static/js/2.75a3afb0.chunk.js.LICENSE.txt",
     "static/media/Index.css": "/website-portfolio/static/media/coffee-cup-yellow.e5eff9ce.jpg",
     "static/media/djangoIcon.svg": "/website-portfolio/static/media/djangoIcon.47e62727.svg",
@@ -30,7 +30,7 @@
     "static/js/runtime-main.16174c02.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.75a3afb0.chunk.js",
-    "static/css/main.0139d1d6.chunk.css",
+    "static/css/main.92824478.chunk.css",
     "static/js/main.4ac98c2b.chunk.js"
   ]
 }
