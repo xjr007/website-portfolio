@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import profile from '../../assets/img/profile-close-up.jpg';
 import RoomIcon from '@material-ui/icons/Room';
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -11,8 +11,11 @@ import Navbar from '../layout/Navbar';
 import ContactFooter from '../layout/ContactFooter';
 
 const Resume = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	});
 	return (
-		<Fragment className='container'>
+		<Fragment>
 			<Navbar />
 			<div className='resume-layout'>
 				<div className='resume container'>
@@ -114,6 +117,15 @@ const Resume = () => {
 									</li>
 								</ul>
 							</div>
+							<div className='resume-item'>
+								<div className='title'>
+									<p className='bold'>More info</p>
+								</div>
+
+								<p className='semi-bold'>Willing to relocate: No</p>
+								<p className='semi-bold'>Criminal record: No</p>
+								<p className='semi-bold'>Blacklisted or credit issues: No</p>
+							</div>
 						</div>
 					</div>
 					<div className='resume-right'>
@@ -127,6 +139,19 @@ const Resume = () => {
 								Whether working with a team or alone, I aim to propel the company forward. <br /> Although
 								passionate about software development, I aspire to become a full-stack developer and am
 								willing to broaden my developing skills wherever I can.
+							</p>
+						</div>
+						<div className='resume-item resume-more-info'>
+							<div className='title'>
+								<p className='bold'>How I became passionate about programming</p>
+							</div>
+							<p>
+								I first came across programming in grade 10. I had joined the school halfway through the
+								third term and had 2 weeks to complete a scratch project that had a weight of 75% of my
+								assessment mark. Although faced with many challenges and barely passing, I found that I was
+								quick to pick up on coding and later started coding in Delphi. I then became familiar with
+								databases using Microsoft Access with Delphi and since then my passion for development has
+								grown even stronger.
 							</p>
 						</div>
 
@@ -168,6 +193,10 @@ const Resume = () => {
 									<div className='info'>
 										<p className='semi-bold'>Salesian Life Choices Academy</p>
 										<p>HTML5, MERN Stack, Python, mySQL</p>
+										<p>
+											Period: 6 months <br />
+											Completed: 50%
+										</p>
 									</div>
 								</li>
 								<li>

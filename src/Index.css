@@ -407,7 +407,7 @@ a:hover {
 }
 
 .test-header {
-	background: orangered;
+	background: orange;
 	color: white;
 }
 
@@ -675,6 +675,7 @@ a:hover {
 	background-repeat: no-repeat;
 	height: 220vh;
 	width: 100%;
+	display: flex;
 }
 
 .semi-bold {
