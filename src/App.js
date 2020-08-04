@@ -8,6 +8,7 @@ import Testimonials from './components/pages/Testimonials';
 import Projects from './components/pages/Projects';
 import Resume from './components/pages/Resume';
 import Navbar from './components/layout/Navbar';
+import CV from './components/pages/CV';
 function App() {
 	return (
 		<Fragment>
@@ -18,7 +19,7 @@ function App() {
 					<Route exact path={ROUTES.CONTACT} component={Contact} />
 					<Route exact path={ROUTES.TESTIMONIALS} component={Testimonials} />
 					<Route exact path={ROUTES.PROJECTS} component={Projects} />
-					<Route exact path={ROUTES.RESUME} component={Resume} />
+					<Route exact path={ROUTES.RESUME} component={CV} />
 				</Switch>
 			</Router>
 		</Fragment>

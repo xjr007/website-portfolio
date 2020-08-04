@@ -508,7 +508,6 @@ a:hover {
 }
 
 .resume .resume-item {
-	padding: 25px 0;
 	border-bottom: 2px solid white;
 }
 
@@ -554,7 +553,16 @@ a:hover {
 	justify-content: space-between;
 }
 
+.resume-skills ul li {
+	color: white;
+	justify-content: space-between;
+}
+
 .resume .resume-left .resume-skills ul li .skill-name {
+	width: 25%;
+}
+
+.resume-skills ul li .skill-name {
 	width: 25%;
 }
 
@@ -566,7 +574,19 @@ a:hover {
 	position: relative;
 }
 
+.resume-skills ul li .skill-progress {
+	width: 60%;
+	margin: 0 5px;
+	height: 5px;
+	background: lightgray;
+	position: relative;
+}
+
 .resume .resume-left .resume-skills ul li .skill-per {
+	width: 15%;
+}
+
+.resume-skills ul li .skill-per {
 	width: 15%;
 }
 
@@ -574,6 +594,11 @@ a:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%;
+	background: #fff;
+}
+
+.resume-skills ul li .skill-progress span {
 	height: 100%;
 	background: #fff;
 }
@@ -673,11 +698,27 @@ a:hover {
 	margin: 0;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 220vh;
+	place-items: center;
+	height: 100vh;
 	width: 100%;
 }
 
 .semi-bold {
 	font-weight: 700;
 	color: brown;
+}
+
+/*CV*/
+
+.resume-layout {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.profile-avatar {
+	width: 250px;
+	height: 250px;
+	object-fit: contain;
+	margin: 3rem;
 }

@@ -24,34 +24,9 @@ const Home = props => {
 	const projRef = createRef();
 	const conRef = createRef();
 
-	const iconRefs = [jsRef, djRef, reactRef, nodeRef, pyRef, sqlRef];
-
-	const btnRefs = [testRef, projRef, resRef, conRef];
-
-	const tIcon = gsap.timeline({ defaults: { duration: 0.5, overflow: 'hidden' } });
-	const tBtn = gsap.timeline({ defaults: { duration: 0.3 } });
-
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-
-	useEffect(() => {
-		// iconRefs.map(icon => timeLine.from(icon.current, { x: 500 }).to(icon.current, { x: 0 }));
-
-		iconRefs.map(icon => {
-			return tIcon
-				.from(icon.current, { x: 500, duration: 0.5 })
-				.to(icon.current, { x: 0, duration: 0.5 });
-		});
-
-		btnRefs.map(btn => {
-			return tBtn.from(btn.current, { opacity: 0 }).to(btn.current, { opacity: 1, duration: 0.5 });
-		});
-
-		gsap.from(aboutRef.current, { x: -500 });
-		gsap.to(aboutRef.current, { x: 0, duration: 1 });
-		// iconRefs.map(icon => timeLine.to(icon.current, { x: 0, rotate: 360, duration: 100 }));
-	});
 
 	return (
 		<div>
