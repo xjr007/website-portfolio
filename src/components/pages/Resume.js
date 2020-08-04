@@ -7,7 +7,6 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import TerrainIcon from '@material-ui/icons/Terrain';
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
-import Navbar from '../layout/Navbar';
 import ContactFooter from '../layout/ContactFooter';
 
 const Resume = () => {

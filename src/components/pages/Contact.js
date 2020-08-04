@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import ContactFooter from '../layout/ContactFooter';
-import Navbar from '../layout/Navbar';
 const Contact = () => {
 	const [status, setStatus] = useState('');
 	const [validated, setValidated] = useState(false);

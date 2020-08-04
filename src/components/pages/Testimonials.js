@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Cards from '../layout/Cards';
 import ContactFooter from '../layout/ContactFooter';
-import Navbar from '../layout/Navbar';
 
 const Testimonials = () => {
 	useEffect(() => {

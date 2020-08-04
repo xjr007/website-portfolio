@@ -3,7 +3,7 @@ import { PROJECT_LINK } from '../../GlobalVars';
 import ContactFooter from '../layout/ContactFooter';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import Navbar from '../layout/Navbar';
+
 const Projects = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
