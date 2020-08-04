@@ -13,7 +13,7 @@ const Projects = () => {
 				<h1>Projects</h1>
 				<h5>Explore some of my recent applications.</h5>
 			</div>
-			<CardGroup className='project-page pt-3 pb-3'>
+			<CardGroup className='project-page pt-4 pb-2'>
 				<Card className='card-style projects shadow-lg p-3 mb-5 bg-white rounded'>
 					<Card.Body>
 						<Card.Title className='card-titled'>MERN Stack</Card.Title>

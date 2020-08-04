@@ -450,8 +450,9 @@ a:hover {
 }
 
 .card-style {
-	width: 18rem;
-	box-shadow: 5px grey;
+	justify-content: center;
+	align-items: center;
+	display: flex;
 }
 
 .card-titled {
@@ -568,7 +569,7 @@ a:hover {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	flex-wrap: wrap;
+	margin-right: 1rem;
 }
 
 .resume .resume-left .resume-skills ul li {
@@ -750,7 +751,18 @@ a:hover {
 
 .more-info {
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
 	text-align: center;
+	background-color: orange;
+	padding: 3rem;
+	margin-top: 3rem;
+}
+
+.resume-about {
+	background-color: orange;
+	padding: 3rem;
+}
+
+.passion-info {
+	padding: 3rem;
 }

@@ -40,7 +40,7 @@ const CV = () => {
 							developing skills wherever I can.
 						</p>
 					</div>
-					<div className=' resume-more-info m-2'>
+					<div className=' passion-info m-2'>
 						<div className='title'>
 							<p className='bold d-flex justify-content-center'>
 								How I became passionate about programming
@@ -52,10 +52,11 @@ const CV = () => {
 							weight of 75% of my assessment mark.
 						</p>
 						<p>
-							Although faced with many challenges and barely passing, I found that I was
-							quick to pick up on coding and later started coding in Delphi. I then became
-							familiar with databases using Microsoft Access with Delphi and since then my
-							passion for development has grown even stronger.
+							Although faced with many challenges and barely passing, the project was a
+							success. I found that I was quick to pick up on coding and later started coding
+							in Delphi. I then became familiar with databases using Microsoft Access with
+							Delphi and since then my passion for software development has grown even
+							stronger.
 						</p>
 					</div>
 					<div className='more-info'>
