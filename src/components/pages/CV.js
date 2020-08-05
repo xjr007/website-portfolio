@@ -1,12 +1,12 @@
 import React from 'react';
 import profile from '../../assets/img/profile-close-up.jpg';
+import { PieChart } from 'react-minimal-pie-chart';
 
 import ProgressBar from '../layout/progressBar';
 const CV = () => {
 	return (
 		<div className='container resume-layout'>
 			<div className='profile-info'>
-				<img src={magnify - code} alt='code' />
 				<div className='d-flex justify-content-center align-items-center flex-column'>
 					<img src={profile} alt='avatar' className='profile-avatar' />
 					<h3>Aaqiel Behardien</h3>
@@ -16,17 +16,52 @@ const CV = () => {
 					<div className='title m-2'>
 						<p className='bold d-flex justify-content-center'>Skills</p>
 					</div>
-					<div>
-						<span className=' d-flex justify-content-center'>ReactJS</span>
-						<ProgressBar bgcolor={'brown'} completed={70} />
-					</div>
-					<div>
-						<span className=' d-flex justify-content-center'>Python</span>
-						<ProgressBar bgcolor={'darkblue'} completed={60} />
-					</div>
-					<div>
-						<span className=' d-flex justify-content-center'>JavaScript</span>
-						<ProgressBar bgcolor={'orangered'} completed={50} />
+					<div className='pie-skill d-flex flex-column '>
+						<div className='row pie'>
+							<span className='col pie mt-4'>Python</span>
+
+							<PieChart
+								className='col pie'
+								animate={true}
+								lineWidth={70}
+								paddingAngle={1}
+								viewBoxSize={1}
+								data={[
+									{ title: 'Python', value: 60, color: '#343a40' },
+									{ title: '', value: 30, color: 'lightgrey' },
+								]}
+							/>
+						</div>
+						<div className='row pie'>
+							<span className='col pie mt-4'>ReactJS</span>
+
+							<PieChart
+								className='col pie'
+								animate={true}
+								lineWidth={70}
+								paddingAngle={1}
+								viewBoxSize={1}
+								data={[
+									{ title: 'ReactJS', value: 70, color: '#343a40' },
+									{ title: '', value: 30, color: 'lightgrey' },
+								]}
+							/>
+						</div>
+						<div className='row pie d-flex justify-content-center '>
+							<span className='col pie mt-4'>JS</span>
+
+							<PieChart
+								className='col pie'
+								animate={true}
+								lineWidth={70}
+								paddingAngle={1}
+								viewBoxSize={1}
+								data={[
+									{ title: 'JS', value: 40, color: '#343a40' },
+									{ title: '', value: 60, color: 'lightgrey' },
+								]}
+							/>
+						</div>
 					</div>
 					<div className='resume-about m-2'>
 						<div className='title'>
