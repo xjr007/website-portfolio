@@ -50,7 +50,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div>
+		<div className='d-flex justify-content-center align-items-center flex-column'>
 			<div className='contact-info '>
 				<h2>Contact info</h2>
 				<ul className=' contact-lg d-flex flex-column mb-5'>
@@ -86,8 +86,7 @@ const Contact = () => {
 					className='form-design align-items-center flex-column  d-flex m-3'
 					onSubmit={onSubmit}
 					action='https://formspree.io/mjvapdoq'
-					method='POST'
-				>
+					method='POST'>
 					<div className='form-heading mt-5 d-flex flex-column align-items-center'>
 						<h5>
 							<span className='con-span'>Got something to say?</span>
@@ -102,18 +101,9 @@ const Contact = () => {
 							{' '}
 							<Form.Group className='form-name'>
 								<Form.Label htmlFor='name'>Name</Form.Label>
-								<Form.Control
-									id='name'
-									name='name'
-									type='text'
-									value={name}
-									onChange={onChange}
-									required
-								/>
+								<Form.Control id='name' name='name' type='text' value={name} onChange={onChange} required />
 
-								<Form.Control.Feedback type='invalid'>
-									Please fill this in.
-								</Form.Control.Feedback>
+								<Form.Control.Feedback type='invalid'>Please fill this in.</Form.Control.Feedback>
 							</Form.Group>
 						</Col>
 
@@ -129,9 +119,7 @@ const Contact = () => {
 									required
 								/>
 
-								<Form.Control.Feedback type='invalid'>
-									Please fill this in.
-								</Form.Control.Feedback>
+								<Form.Control.Feedback type='invalid'>Please fill this in.</Form.Control.Feedback>
 							</Form.Group>
 						</Col>
 
@@ -147,9 +135,7 @@ const Contact = () => {
 								required
 							/>
 
-							<Form.Control.Feedback type='invalid'>
-								Please fill this in.
-							</Form.Control.Feedback>
+							<Form.Control.Feedback type='invalid'>Please fill this in.</Form.Control.Feedback>
 						</Form.Group>
 					</Form.Row>
 

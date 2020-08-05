@@ -569,7 +569,6 @@ a:hover {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	margin-right: 1rem;
 }
 
 .resume .resume-left .resume-skills ul li {
