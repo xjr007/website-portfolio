@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import profile from '../../assets/img/profile-close-up.jpg';
 import { PieChart } from 'react-minimal-pie-chart';
 
-import ProgressBar from '../layout/progressBar';
 const CV = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className='container resume-layout'>
 			<div className='d-flex justify-content-center align-items-center flex-column'>

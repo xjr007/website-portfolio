@@ -67,9 +67,6 @@ a:hover {
 		text-align: left;
 	}
 
-	.resume-work ul li .info {
-	}
-
 	.resume-education {
 		grid-column: 2;
 		text-align: end;
@@ -777,6 +774,7 @@ a:hover {
 .resume-about {
 	background-color: orange;
 	padding: 3rem;
+	width: 100%;
 }
 
 .passion-info {
