@@ -5,14 +5,14 @@ const Cards = () => {
 	return (
 		<div className='tests'>
 			<Card
-				header='Testimonial'
+				header='Godwin Dzvapatsva '
 				review={COMMENTS.GODWIN}
-				title='Godwin Dzvapatsva (Head of Curriculum and Learning)'
+				title='(Head of Curriculum and Learning)'
 			/>
-			<Card header='Testimonial' review={COMMENTS.JASON} title='Jason Wandrag (Lecturer)' />
-			<Card header='Testimonial' review={COMMENTS.MISCHA} title='Mischa Achmat' />
-			<Card header='Testimonial' review={COMMENTS.LUKHANYO} title='Lukhanyo Vakele' />
-			<Card header='Testimonial' review={COMMENTS.HISHAAM} title='Hishaam De Vries' />
+			<Card header='Jason Wandrag ' review={COMMENTS.JASON} title='(Lecturer)' />
+			<Card header='Mischa Achmat' review={COMMENTS.MISCHA} title='(Colleague)' />
+			<Card header='Lukhanyo Vakele' review={COMMENTS.LUKHANYO} title='(Colleague)' />
+			<Card header='Hishaam De Vries' review={COMMENTS.HISHAAM} title='(Colleague)' />
 		</div>
 	);
 };
