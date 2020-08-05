@@ -68,6 +68,11 @@ a:hover {
 		grid-column: 2;
 		text-align: end;
 	}
+
+	.pie-skill {
+		display: flex;
+		flex-direction: row !important;
+	}
 }
 
 @media only screen and (min-width: 600px) {
@@ -568,6 +573,7 @@ a:hover {
 .resume-skills {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 }
 
@@ -764,4 +770,9 @@ a:hover {
 
 .passion-info {
 	padding: 3rem;
+}
+
+.pie {
+	padding: 0;
+	margin: 0;
 }
