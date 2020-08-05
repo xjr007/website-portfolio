@@ -8,6 +8,7 @@ const CV = () => {
 	}, []);
 	return (
 		<div className='container resume-layout'>
+			<h1 className='d-flex justify-content-center align-items-center mt-5 pt-3'>Resume</h1>
 			<div className='d-flex justify-content-center align-items-center flex-column'>
 				<img src={profile} alt='avatar' className='profile-avatar' />
 				<h3>Aaqiel Behardien</h3>
