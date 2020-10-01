@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5adcb094f41b449f18c2350cac041fed",
+    "revision": "bd0938f7c271b7eeabece98e2bd16370",
     "url": "/website-portfolio/index.html"
   },
   {
-    "revision": "905b91b75340ea207aa0",
-    "url": "/website-portfolio/static/css/2.af3c1da9.chunk.css"
+    "revision": "5af265dc451976fdf608",
+    "url": "/website-portfolio/static/css/2.43079d8c.chunk.css"
   },
   {
-    "revision": "297e5ea145a99c552350",
-    "url": "/website-portfolio/static/css/main.3927ff1a.chunk.css"
+    "revision": "2e118404b2eb63515625",
+    "url": "/website-portfolio/static/css/main.d9b7c696.chunk.css"
   },
   {
-    "revision": "905b91b75340ea207aa0",
-    "url": "/website-portfolio/static/js/2.2b8e00fa.chunk.js"
+    "revision": "5af265dc451976fdf608",
+    "url": "/website-portfolio/static/js/2.ddaee33c.chunk.js"
   },
   {
-    "revision": "0b4537f5ca04a719fffa510319d8d0ea",
-    "url": "/website-portfolio/static/js/2.2b8e00fa.chunk.js.LICENSE.txt"
+    "revision": "5e9b6f5c16b720e8a86875f97734673e",
+    "url": "/website-portfolio/static/js/2.ddaee33c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "297e5ea145a99c552350",
-    "url": "/website-portfolio/static/js/main.3b1156a5.chunk.js"
+    "revision": "2e118404b2eb63515625",
+    "url": "/website-portfolio/static/js/main.02ea3683.chunk.js"
   },
   {
     "revision": "7765f274dd306fdb1d92",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/website-portfolio/static/media/djangoIcon.47e62727.svg"
   },
   {
-    "revision": "0c0d0a7bc23460d052f6b87639c86d46",
-    "url": "/website-portfolio/static/media/githubIcon.0c0d0a7b.svg"
+    "revision": "fabbb2cf33ac8899df2fcc9a207304d8",
+    "url": "/website-portfolio/static/media/githubIcon.fabbb2cf.svg"
   },
   {
     "revision": "62593ffa4c7bb7261c7f40a15fb164c3",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/website-portfolio/static/media/linkedInIcon.56b93e75.svg"
   },
   {
-    "revision": "b018dd4ee2594a6b20da9b88e21dd5e5",
-    "url": "/website-portfolio/static/media/mysqlIcon.b018dd4e.svg"
+    "revision": "37d27b2a2c88f3d9c4931f1bb2b89c9f",
+    "url": "/website-portfolio/static/media/mysqlIcon.37d27b2a.svg"
   },
   {
     "revision": "705b987e58fa317cf913c181018040be",
@@ -64,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/website-portfolio/static/media/profile-close-up.5994caf5.jpg"
   },
   {
-    "revision": "5d993cd681195888c002a03e9daf6c2c",
-    "url": "/website-portfolio/static/media/pythonIcon.5d993cd6.svg"
+    "revision": "0c468238d4ff94640c1c542e3c23f67e",
+    "url": "/website-portfolio/static/media/pythonIcon.0c468238.svg"
   },
   {
     "revision": "4abe940d4759c1a9a8bd571a92721cb3",
