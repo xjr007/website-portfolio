@@ -8,15 +8,8 @@ import djangoSvg from '../../assets/svg/djangoIcon.svg';
 import mySqlSvg from '../../assets/svg/mysqlIcon.svg';
 import nodeSvg from '../../assets/svg/nodeIcon.svg';
 import { ROUTES } from '../../GlobalVars';
-import { gsap } from 'gsap';
 
 const Home = props => {
-	const jsRef = createRef();
-	const reactRef = createRef();
-	const pyRef = createRef();
-	const djRef = createRef();
-	const sqlRef = createRef();
-	const nodeRef = createRef();
 	const aboutRef = createRef();
 	const testRef = createRef();
 	const resRef = createRef();
@@ -32,7 +25,7 @@ const Home = props => {
 			<div className='header'>
 				<div className='heading'>
 					<h1>Hi, I am Aaqiel Behardien</h1>
-					<p>Junior MERN Stack Developer</p>
+					<p>Junior Developer</p>
 					<a href='#about' className='button' type='button'>
 						<span>Explore</span>
 					</a>
@@ -45,18 +38,27 @@ const Home = props => {
 							<span>About</span>
 						</h1>
 						<p>
-							<span>"</span> In the year of the pandemic (2020), that's when I decided it is
-							time to re-shape my life. Join me on my journey and explore. <span>"</span>
+							<span>"</span> In the year of the pandemic (2020), that's
+							when I decided it is time to re-shape my life. Come and
+							join me on my journey. <span>"</span>
 						</p>
 					</div>
 					<div className='navigation'>
 						<div className='navigation-link'>
-							<Link to={ROUTES.TESTIMONIALS} className='button' ref={testRef}>
+							<Link
+								to={ROUTES.TESTIMONIALS}
+								className='button'
+								ref={testRef}
+							>
 								<span>Testimonials</span>
 							</Link>
 						</div>
 						<div className='navigation-link'>
-							<Link to={ROUTES.PROJECTS} className='button' ref={projRef}>
+							<Link
+								to={ROUTES.PROJECTS}
+								className='button'
+								ref={projRef}
+							>
 								<span>Projects</span>
 							</Link>
 						</div>
@@ -73,48 +75,12 @@ const Home = props => {
 					</div>
 				</div>
 				<div className='language-icons'>
-					<img
-						ref={jsRef}
-						className='prog-icon'
-						src={jsSvg}
-						alt='JS Icon'
-						onMouseEnter={() => gsap.to(jsRef.current, { rotate: 360, duration: 100 })}
-					/>
-					<img
-						ref={reactRef}
-						className='prog-icon'
-						src={reactSvg}
-						alt='React Icon'
-						onMouseEnter={() => gsap.to(reactRef.current, { rotate: 360, duration: 100 })}
-					/>
-					<img
-						ref={pyRef}
-						className='prog-icon'
-						src={pySvg}
-						alt='Python Icon'
-						onMouseEnter={() => gsap.to(pyRef.current, { rotate: 360, duration: 100 })}
-					/>
-					<img
-						ref={djRef}
-						className='prog-icon'
-						src={djangoSvg}
-						alt='Django Icon'
-						onMouseEnter={() => gsap.to(djRef.current, { rotate: 360, duration: 100 })}
-					/>
-					<img
-						ref={nodeRef}
-						className='prog-icon'
-						src={nodeSvg}
-						alt='Node Icon'
-						onMouseEnter={() => gsap.to(nodeRef.current, { rotate: 360, duration: 100 })}
-					/>
-					<img
-						ref={sqlRef}
-						className='prog-icon'
-						src={mySqlSvg}
-						alt='mySQL Icon'
-						onMouseEnter={() => gsap.to(sqlRef.current, { rotate: 360, duration: 100 })}
-					/>
+					<img className='prog-icon' src={jsSvg} alt='JS Icon' />
+					<img className='prog-icon' src={reactSvg} alt='React Icon' />
+					<img className='prog-icon' src={pySvg} alt='Python Icon' />
+					<img className='prog-icon' src={djangoSvg} alt='Django Icon' />
+					<img className='prog-icon' src={nodeSvg} alt='Node Icon' />
+					<img className='prog-icon' src={mySqlSvg} alt='mySQL Icon' />
 				</div>
 			</div>
 		</div>

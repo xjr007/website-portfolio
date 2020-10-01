@@ -21,6 +21,8 @@ export const COMMENTS = {
 
 export const PROJECT_LINK = {
 	CONTACT_KEEPER: 'https://intense-springs-56057.herokuapp.com/login#!',
-	LC_ONLINE: 'https://github.com/xjr007/Python-projects/raw/master/mysql-python_ENDMOD.zip',
+	LC_ONLINE:
+		'https://github.com/xjr007/Python-projects/raw/master/mysql-python_ENDMOD.zip',
 	GITHUB_FINDER: 'https://gitfinder-app.netlify.app/',
+	BUY_AND_DASH: ' https://shoptest3-12345.herokuapp.com/ ',
 };

@@ -399,20 +399,20 @@ a:hover {
 .linkedIn {
 	height: 24px;
 	width: 24px;
-	transition: all 0.7s;
+	transition: all 0.4s;
 }
 
 .instagram:hover,
 .github:hover,
 .linkedIn:hover {
 	cursor: pointer;
-	transform: translate(10%, 10%);
+	scale: 1.1;
 }
 
 .instagram:hover:after,
 .github:hover:after,
 .linkedIn:hover:after {
-	transform: translate(-10%, -10%);
+	scale: 1.1;
 }
 
 /*testimonial*/

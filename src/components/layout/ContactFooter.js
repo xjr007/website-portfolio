@@ -18,22 +18,40 @@ export const contactFooter = () => {
 								<a
 									href='https://www.instagram.com/aaqiel_behardien/'
 									target='_blank'
-									rel='noopener noreferrer'>
-									<img src={instagramSvg} className='instagram' alt='Instgram' />
+									rel='noopener noreferrer'
+								>
+									<img
+										src={instagramSvg}
+										className='instagram'
+										alt='Instgram'
+									/>
 								</a>
 							</li>
 							<li>
-								<a href='https://www.github.com/xjr007' target='_blank' rel='noopener noreferrer'>
+								<a
+									href='https://www.github.com/xjr007'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
 									{' '}
-									<img src={githubSvg} className='github' alt='Github' />
+									<img
+										src={githubSvg}
+										className='github'
+										alt='Github'
+									/>
 								</a>
 							</li>
 							<li>
 								<a
 									href='https://www.linkedin.com/in/aaqiel-behardien-53a2aa161/'
 									target='_blank'
-									rel='noopener noreferrer'>
-									<img src={linkedInSvg} className='linkedIn' alt='LinkedIn' />
+									rel='noopener noreferrer'
+								>
+									<img
+										src={linkedInSvg}
+										className='linkedIn'
+										alt='LinkedIn'
+									/>
 								</a>
 							</li>
 						</ul>
